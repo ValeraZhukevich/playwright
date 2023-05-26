@@ -8,6 +8,7 @@ test('should show Page Object Model article', async ({ page }) => {
   await page.goto('https://onliner.by');
   await onlinerPage.typeInSearchField('Lego');
   await onlinerPage.chooseFirstCategory();
+  await onlinerPage.selectCheckBox('Star Wars');
 });
 
 

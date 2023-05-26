@@ -13,5 +13,11 @@ exports.OnlinerPage = class OnlinerPage {
         await this.page.frameLocator('#fast-search-modal iframe').locator('a.category__title').click();
     }
 
+    async selectCheckBox(checkboxName){
+        await this.page.getByLabel('schema-filter__checkbox-item').selectOption({ label: checkboxName});
+    }
+
+    
+
 
 }
